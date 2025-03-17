@@ -4,7 +4,7 @@ require 'uri'
 class S3Storage
   def initialize(bucket_name)
     @bucket_name = bucket_name
-    @base_url = "https://4wy550we2j.execute-api.us-east-1.amazonaws.com/dev/#{@bucket_name}"
+    @base_url = "https://execute-api.us-east-1.amazonaws.com/dev/#{@bucket_name}"
   end
 
   def store_blob(id, data)
